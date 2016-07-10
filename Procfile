@@ -1,1 +1,1 @@
-web: python CSC/manage.py runserver 0.0.0.0:8000
+web: cd CSC; python manage.py runserver 0.0.0.0:8000
