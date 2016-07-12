@@ -4,6 +4,8 @@
 	<meta charset = "utf-8"/>
 	<title> CSC </title>
 	<link rel = "stylesheet" href = "/static/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/static/typed.js"></script>
 </head>
 
 <body id="index_body">
@@ -11,8 +13,16 @@
 		<nav id="top_menu">
 
 			<h1>CSC</h1>
-			<h3>alex is so big<h3>
-
+			<h3><span class="element"></span>
+          <script>
+          $(function(){
+              $(".element").typed({
+                strings: ["CSC", "CSC!", "CSC!!!^1000"],
+                typeSpeed: 30
+              });
+            });
+          </script>
+          </h3>
 			
 		</nav>
 
