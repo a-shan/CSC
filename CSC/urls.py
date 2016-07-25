@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.conf.urls import patterns, include, url
 
-from CSCproj.views import index
+import CSCproj.views
 
 '''
 urlpatterns = [
@@ -25,6 +25,7 @@ urlpatterns = [
 '''
 
 urlpatterns = patterns('', 
-    url(r'CSCproj/$', index),
-    url(r'^$', index),
+    url(r'CSCproj/$', CSCproj.views.index),
+    url(r'^$', CSCproj.views.index),
+    url(r'^db', CSCproj.views.db, name='db')
     )
