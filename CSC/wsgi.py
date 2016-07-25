@@ -12,9 +12,9 @@ import os
 from django.core.wsgi import get_wsgi_application
 
 ## For local deployment and testing, comment out whitenoise lines
-#from whitenoise.django import DjangoWhiteNoise
+from whitenoise.django import DjangoWhiteNoise
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CSC.settings")
 
 application = get_wsgi_application()
-#application = DjangoWhiteNoise(application)
+application = DjangoWhiteNoise(application)
