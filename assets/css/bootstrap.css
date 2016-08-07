@@ -1582,8 +1582,10 @@ pre code {
   overflow-y: scroll;
 }
 .container {
+  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
+  display: block;
   margin-right: auto;
   margin-left: auto;
 }
@@ -4589,15 +4591,15 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #222;
-  border-color: #080808;
+  background-color: #ffffff;
+  border-color: #B3B5B5;
 }
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
-  color: #fff;
+  color: #000000;
   background-color: transparent;
 }
 .navbar-inverse .navbar-text {
@@ -4608,14 +4610,14 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: #fff;
+  color: #000000;
   background-color: transparent;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #fff;
-  background-color: #080808;
+  background-color: #7E8385;
 }
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
@@ -4979,6 +4981,27 @@ a.badge:focus {
   padding-right: 15px;
   padding-left: 15px;
   border-radius: 6px;
+  height: 500px;
+  //background-image: url('../img/kanye.jpg');
+}
+.container .jumbotron:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 500px;
+  z-index: 1;
+  background-image: url('../img/kanye.jpg');
+  opacity: 0.3;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 .jumbotron .container {
   max-width: 100%;
